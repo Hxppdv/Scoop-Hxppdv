@@ -1,19 +1,19 @@
 {
     "##": "Check chromium.woolyss.com for different versions of Chromium releases.",
-    "version": "85.0.4183.83",
+    "version": "88.0.4324.146",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v85.0.4183.83-r782793-Win64/ungoogled-chromium-85.0.4183.83-2_Win64.7z",
-            "hash": "sha1:e2a561650ca6f3622acc1d170a6e76ef87405152",
-            "extract_dir": "ungoogled-chromium-85.0.4183.83-2_Win64"
+            "url": "https://github.com/macchrome/winchrome/releases/download/v88.0.4324.146-r827102-Win64/ungoogled-chromium-88.0.4324.146-1_Win64.7z",
+            "hash": "sha1:3B29FEB2886EDB2B837512D784BB6B194EA2D9FA",
+            "extract_dir": "ungoogled-chromium-88.0.4324.146-1_Win64"
         },
         "32bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v85.0.4183.83-r782793-Win64/Ungoogled-Chromium-85.0.4183.83-2_Win32.7z",
-            "hash": "sha1:7be72395b89ce0cc5f6fdbcd3a90835baf4051e8",
-            "extract_dir": "Ungoogled-Chromium-85.0.4183.83-2_Win32"
+            "url": "https://github.com/macchrome/winchrome/releases/download/v88.0.4324.146-r827102-Win64/ungoogled-Chromium-88.0.4324.146-1_Win32.7z",
+            "hash": "sha1:1F8DBA583E9B210DC7B8C4379F2692F76F29C21D",
+            "extract_dir": "ungoogled-Chromium-88.0.4324.146-1_Win32"
         }
     },
     "bin": [
@@ -57,4 +57,3 @@
         }
     }
 }
-
