@@ -1,0 +1,28 @@
+{
+    "version": "5.0.96.3",
+    "description": "Zotero in PortableApps.com Format",
+    "homepage": "https://github.com/pedrom34/ZoteroPortable",
+    "license": "Unknown",
+    "url": "https://github.com/pedrom34/ZoteroPortable/releases/download/dev76/ZoteroPortable_5.0_Development_Test_76.paf.exe#/dl.7z",
+    "hash": "DE246791C0E9174A2A52296BA4FD1D41DD84E10919C9452CAD32F8D417E4D2BC",
+    "bin": [
+        [
+            "ZoteroPortable.exe",
+            "Zotero"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "ZoteroPortable.exe",
+            "Zotero"
+        ]
+    ],
+    "persist": "Data",
+    "post_install": [
+        "Remove-Item -LiteralPath \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "if(!(test-path \"$dir\\ZoteroPortable.ini\")) {",
+        "   Copy-Item \"$dir\\Other\\Source\\ZoteroPortable.ini\" \"$dir\\ZoteroPortable.ini\"",
+        "   (Get-Content \"$dir\\ZoteroPortable.ini\").replace('DisableSplashScreen=false', 'DisableSplashScreen=true') | Set-Content \"$dir\\ZoteroPortable.ini\"",
+        "}"
+    ]
+}
